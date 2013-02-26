@@ -1,7 +1,7 @@
 /**********************************************************************
  *
- * Copyright(c) 2008 Imagination Technologies Ltd. All rights reserved.
- * 		Samsung Electronics System LSI. modify
+ * Copyright (C) Imagination Technologies Ltd. All rights reserved.
+ * 
  * This program is free software; you can redistribute it and/or modify it
  * under the terms and conditions of the GNU General Public License,
  * version 2, as published by the Free Software Foundation.
@@ -22,13 +22,12 @@
  * Imagination Technologies Ltd. <gpl-support@imgtec.com>
  * Home Park Estate, Kings Langley, Herts, WD4 8LZ, UK 
  *
-******************************************************************************/
+*****************************************************************************/
+#ifndef _STATICVERSION_H_
+#define _STATICVERSION_H_
 
-#include <plat/media.h>
-#include <mach/media.h>
+#define PVRVERSION_MAJ    1
+#define PVRVERSION_MIN    8
+#define PVRVERSION_BRANCH 18
 
-#define S3C_BC_DEVICE_NAME					"s3c_bc"
-#define S3C_BC_DEVICE_ID					0
-#define S3C_BC_DEVICE_BUFFER_COUNT			2								/* TODO: Modify this accordingly. */
-#define S3C_BC_DEVICE_PHYS_PAGE_SIZE		0x1000							/* 4KB */
-#define S3C_BC_DEVICE_PHYS_ADDR_START		((unsigned int)s5p_get_media_memory_bank(S5P_MDEV_TEXSTREAM,0)) 
+#endif /* _STATICVERSION_H_ */
